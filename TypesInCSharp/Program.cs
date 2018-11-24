@@ -52,6 +52,14 @@ namespace TypesInCSharp
 
     struct Vector
     {
+        //Constructor
+        public Vector(int x, int y)
+        {
+            this.x = x;
+            this.y = y;
+        }
+
+        //Fields
         public int x;
         public int y;
     }
