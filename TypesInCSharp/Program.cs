@@ -32,9 +32,9 @@ namespace TypesInCSharp
         
     }
 
-    enum Status
+    enum Status : byte
     {
-        Alive,
+        Alive = 1,
         Injured,
         Dead
     }
