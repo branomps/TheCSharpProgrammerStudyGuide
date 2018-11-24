@@ -10,7 +10,18 @@ namespace TypesInCSharp
     {
         static void Main(string[] args)
         {
-            Status player = Status.Alive;
+           /* Vector vector = new Vector();
+            vector.x = 5;
+            vector.y = 10;*/
+
+            Vector vector = new Vector
+            {
+                x = 5,
+                y = 10
+            };
+            Console.WriteLine($"x = {vector.x}");
+            Console.WriteLine($"y = {vector.y}");
+           /* Status player = Status.Alive;
             switch (player)
             {
                 case Status.Alive:
@@ -25,7 +36,7 @@ namespace TypesInCSharp
                 default:
                     Console.WriteLine("Player is retired.  :-D");
                     break;
-            }
+            }*/
             Console.ReadLine();
         }
 
@@ -37,5 +48,11 @@ namespace TypesInCSharp
         Alive = 1,
         Injured,
         Dead
+    }
+
+    struct Vector
+    {
+        public int x;
+        public int y;
     }
 }
